@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Newsreader</string>
+
+    <!-- Title -->
+    <string name="toolbar_title">Triple Newsreader</string>
+
+    <!--Home-->
+    <string name="something_went_wrong">Something went wrong!</string>
+    <string name="retry">Retry</string>
+
+    <!--Favourites-->
+    <string name="no_favorite_found">No Favorites</string>
+
+    <!--BottomSheet-->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="logout">Logout</string>
+
+    <!--Login-->
+    <string name="login_failed">Failed to login</string>
+    <string name="login_successfully">Login Successfully</string>
+    <string name="registered_successfully">Registered Successfully. Try login now!</string>
+
+    <string name="username_validation">Username is Invalid</string>
+    <string name="password_validation">Password must be at least 8 characters long.</string>
+    <string name="empty_fields">Fields can\'t be empty</string>
+
+    <!--DetailPage-->
+    <string name="open_in_browser">Open in browser</string>
+
+</resources>
