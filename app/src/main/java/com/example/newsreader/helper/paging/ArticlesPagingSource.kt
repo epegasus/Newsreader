@@ -12,7 +12,6 @@ class ArticlesPagingSource(private val api: ClientApi) : PagingSource<Int, Resul
     private var nextId: Int? = null
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Result> {
-        Log.d(TAG, "load: called $nextId")
         try {
             val nextPage = params.key ?: 1
             val response = nextId?.let {
@@ -22,8 +21,6 @@ class ArticlesPagingSource(private val api: ClientApi) : PagingSource<Int, Resul
             }
             val productList = response.body()?.Results ?: emptyList()
             nextId = response.body()?.NextId
-
-            //Log.d(TAG, "load: Count: $nextId, NextPage: $nextPage")
 
             return LoadResult.Page(
                 data = productList,
